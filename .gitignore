@@ -34,3 +34,16 @@ Icon
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
+
+Alpha80.ncb
+Alpha80.suo
+Alpha80.vcproj.TW.nuno.sung.user
+Release/Alpha.exe
+Release/Alpha.exe.intermediate.manifest
+Release/Alpha.obj
+Release/Alpha.pch
+Release/Alpha.res
+Release/BuildLog.htm
+Release/mt.dep
+Release/stdafx.obj
+Release/vc80.idb

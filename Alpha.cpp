@@ -55,10 +55,12 @@ int Run(LPTSTR /*lpstrCmdLine*/ = NULL, int nCmdShow = SW_SHOWDEFAULT)
 	wndMain.ShowWindow(nCmdShow);
 
 	DWORD dwThreadId = 0;
-	HANDLE hWorkingThread = CreateThread(NULL, 0, AnotherWINThread, NULL, 0, &dwThreadId);
-	ATLASSERT(hWorkingThread!=NULL);
+	HANDLE hAnotherWinThread = CreateThread(NULL, 0, AnotherWINThread, NULL, 0, &dwThreadId);
+	ATLASSERT(hAnotherWinThread!=NULL);
 
 	int nRet = theLoop.Run();
+
+	CloseHandle(hAnotherWinThread);
 
 	_Module.RemoveMessageLoop();
 	return nRet;
