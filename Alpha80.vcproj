@@ -46,7 +46,8 @@
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
-				InlineFunctionExpansion="1"
+				Optimization="0"
+				InlineFunctionExpansion="0"
 				AdditionalIncludeDirectories="WTL9_Include"
 				PreprocessorDefinitions="_EMBEDDED_MANIFEST"
 				StringPooling="true"
@@ -61,6 +62,7 @@
 				ProgramDataBaseFileName=".\Release/"
 				WarningLevel="4"
 				SuppressStartupBanner="true"
+				DebugInformationFormat="4"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"
@@ -80,6 +82,7 @@
 				OutputFile=".\Release/Alpha.exe"
 				LinkIncremental="1"
 				SuppressStartupBanner="true"
+				GenerateDebugInformation="true"
 				ProgramDatabaseFile=".\Release/Alpha.pdb"
 				SubSystem="2"
 			/>
@@ -141,6 +144,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
+				AdditionalIncludeDirectories="WTL9_Include"
 				PreprocessorDefinitions="_EMBEDDED_MANIFEST"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="1"
